@@ -12232,3 +12232,33 @@ pre .code {
 .section-lg {
   padding: 100px 0 !important;
 }
+
+.whatsapp-button {
+  background-color: #25D366;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.whatsapp-button i {
+  margin-right: 10px;
+}
+.linkedin-button {
+  background-color: #0077B5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.linkedin-button i {
+  margin-right: 10px;
+}
