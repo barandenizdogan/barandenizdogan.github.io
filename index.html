@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-JrtIlYxPMG8mm9F2F/8wk5V2Lc5+8pMvLpr8y71AY5U9mvd0IDcCnnbEXQb8TJ3e/JWkRzp2GpcD7ymivHAoCg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .whatsapp-button {
-            background-color: #25D366;
+            background-color: #63db83;
             color: #fff;
             border: none;
             padding: 10px 20px;
@@ -110,11 +110,17 @@ continuous learning and staying updated with the latest industry trends.
                     <p class="m-0 text-light">Always feel Free to Contact</p>
                 </div>
                 <div class="col-sm offset-sm-2 offset-md-3">
-                    <button class="whatsapp-button", onclick="onclickContact()">Whatsapp</button>
+                    <button class="whatsapp-button", onclick="onclickWA()", style="margin-bottom: 10px;">Whatsapp</button>
+
+                    <button class="whatsapp-button", onclick="onclickLinkedIn()">LinkedIn</button>
                     <script>
-                        function onclickContact() {
+                        function onclickWA() {
                             var url_wa = "https://wa.me/905449755200";
                             window.location.href = url_wa;
+                        }
+                        function onclickLinkedIn() {
+                            var url_linkedin = "https://www.linkedin.com/in/barandenizdogan/";
+                            window.location.href = url_linkedin;
                         }
                     </script>
                 </div>
