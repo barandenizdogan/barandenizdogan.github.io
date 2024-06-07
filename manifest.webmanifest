@@ -1,0 +1,12 @@
+{
+  "name": "Joystick Lesson",
+  "short_name": "Joystick Lesson",
+  "id": "com.example.JoystickLesson",
+  "description": "A game example where you add a joystick to control the movement of a ship in space.",
+  "orientation": "portrait",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "black",
+  "categories": ["games", "entertainment"],
+  "icons": []
+}
