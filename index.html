@@ -1,164 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="My Portfolio">
-    <meta name="author" content="Devcrud">
-    <title>Baran Deniz Doğan</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + Meyawo main styles -->
-	<link rel="stylesheet" href="assets/css/meyawo.css">
-    <style>
-        .whatsapp-button {
-            background-color: #25D366;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            }
-
-        .whatsapp-button i {
-        margin-right: 10px;
-        }
-        .linkedin-button {
-        background-color: #0077B5;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        font-size: 16px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        }
-        .linkedin-button i {
-        margin-right: 10px;
-        }
-
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Flip Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-
-    <!-- Page Navbar -->
-    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
-        <div class="container">
-            <a class="logo" href="#">Baran Deniz Doğan</a>         
-            <ul class="nav">
-                <li class="item">
-                    <a class="link" href="#home">Home</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#about">About</a>
-                </li>
-            </ul>
-            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
-                <div class="hamburger-box">
-                  <div class="hamburger-inner"></div>
-                </div>
-            </a>
-        </div>          
-    </nav><!-- End of Page Navbar -->
-
-    <!-- page header -->
-    <header id="home" class="header">
-        <div class="overlay"></div>
-        <div class="header-content container">
-            <h1 class="header-title">
-                <span class="up">HI!</span>
-                <span class="down">I am Baran Deniz Doğan</span>
-            </h1>
-            <p class="header-subtitle">Mechanical Engineer</p>            
-
-            <button class="btn btn-primary", onclick="onclickResume()">See My Resume</button>
-            <script>
-                function onclickResume() {
-                    var url = "https://barandenizdogan.github.io/Resume.pdf";
-                    window.location.href = url;
-                }
-            </script>
-        </div>              
-    </header><!-- end of page header -->
-
-    <!-- about section -->
-    <section class="section pt-0" id="about">
-        <!-- container -->
-        <div class="container text-center">
-            <!-- about wrapper -->
-            <div class="about">
-                <div class="about-img-holder">
-                    <img src="assets/imgs/bdd.png" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                </div>
-                <div class="about-caption">
-                    <p class="section-subtitle">Who Am I ?</p>
-                    <h2 class="section-title mb-3">About Me</h2>
-                    <p>
-                        Dynamic and results-driven Mechanical Engineer with extensive experience in
-optimizing manufacturing processes, ensuring product quality, and implementing
-cost-effective solutions. Proficient in 3D modeling, bringing innovative designs to life
-with precision and attention to detail. Adept at Python programming and back-end
-development, with a proven track record in creating robust, scalable, and efficient
-systems. Combines a solid engineering background with a passion for technology and
-coding, offering a unique blend of skills to drive product development and enhance
-operational efficiency. An analytical thinker and problem solver, committed to
-continuous learning and staying updated with the latest industry trends.              
-                    </p>
-                </div>              
-            </div><!-- end of about wrapper -->
-        </div><!-- end of container -->
-    </section> <!-- end of about section -->
-
-    <!-- section -->
-    <section class="section-sm bg-primary">
-        <!-- container -->
-        <div class="container text-center text-sm-left">
-            <!-- row -->
-            <div class="row align-items-center">
-                <div class="col-sm offset-md-1 mb-4 mb-md-0">
-                    <h6 class="title text-light">Want to work with me?</h6>
-                    <p class="m-0 text-light">Always feel Free to Contact</p>
-                </div>
-                <div class="col-sm offset-sm-2 offset-md-3">
-                    <button class="whatsapp-button", onclick="onclickWA()", style="margin-bottom: 10px;">Whatsapp</button>
-
-                    <button class="linkedin-button", onclick="onclickLinkedIn()">LinkedIn</button>
-                    <script>
-                        function onclickWA() {
-                            var url_wa = "https://wa.me/905449755200";
-                            window.location.href = url_wa;
-                        }
-                        function onclickLinkedIn() {
-                            var url_linkedin = "https://www.linkedin.com/in/barandenizdogan/";
-                            window.location.href = url_linkedin;
-                        }
-                    </script>
-                </div>
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </section> <!-- end of section -->
-
-    <!-- footer -->
+<body>
     <div class="container">
-        <footer class="footer">       
-            <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a >Baran Deniz Doğan</a></p>
-            
-        </footer>
-    </div> <!-- end of page footer -->
-	
-	<!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- bootstrap 3 affix -->
-	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- Meyawo js -->
-    <script src="assets/js/meyawo.js"></script>
-
+        <h1>Coin Flip Game</h1>
+        <p>Choose Heads or Tails and flip the coin!</p>
+        <div class="coin" id="coin">
+            <img src="heads.png" alt="Heads" id="coinImg">
+        </div>
+        <div class="buttons">
+            <button id="headsBtn">Heads</button>
+            <button id="tailsBtn">Tails</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
